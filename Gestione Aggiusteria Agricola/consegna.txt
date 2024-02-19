@@ -1,0 +1,40 @@
+All'aggiusteria agricola possono essere riparati tre tipi di apparecchiature: motozappe, decespugliatori, tosaerba.
+ Ciascuna di queste macchine, ha dei dati comuni.
+Un numero intero che costituisce il numero d'ordine della lavorazione,
+ ogni volta che una macchina viene consegnata all'aggiusteria acquisisce un nuovo numero d'ordine, 
+ anche se quella macchina è già stata lì in precedenza.
+
+ Deve essere specificata la marca dell'apparecchio. Ad ogni macchina deve essere associato il totale del costo di riparazione.
+
+Per i tosaerba e le motozappe va specificato il numero di ruote della macchina.
+
+Per i decespugliatori bisogna specificare se l'accensione è elettronica oppure no.
+
+Costruire una opportuna gerarchia di classi, strutturando correttamente la base dei dati.
+Il massimo numero di macchine che possonono essere simultaneamente in lavorazione è 10 perché questi sono i posti in officina.
+
+Ad ogni macchina riparata, deve essere associata una lista delle lavorazioni effettuate e del loro costo, la cui somma costituisce
+ il totale del costo della riparazione .
+
+
+DETTAGLI:
+All'aggiusteria agricola possono essere riparati tre tipi di apparecchi:
+M=motozappe
+D=decespugliatori
+T=tosaerba
+Ciascuna di queste macchine, ha dei dati comuni:
+
+int id :un intero che il numero d'ordine della lavorazione
+int tot :il costo totale della riparazione
+String m: la marca dell'apparecchio.
+
+I tosaerba e le motozappe hanno un dato specifico che è
+int nruote :il numero di ruote che ha la macchina .
+
+I decespugliatori hanno un dato specifico che è
+boolean ae:se il decespugliatore è ad accensione elettronica ae=true.
+
+
+In base alle regole della programmazione ad oggetti, facciamo in modo che i dati comuni siano tutti contenuti
+ in un'unica classe genitrice A (apparecchio), da questa verranno derivate le tre classi figlie M (motozappa) T (tosaerba) e
+  D (decespugliatore) dove vengono inseriti solo i dati specifici dei singoli apparecchi.

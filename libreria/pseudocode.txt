@@ -1,0 +1,28 @@
+1. Classe Cliente:
+    attributi: codice identificativo,spesaEuro, spesaCentesimi
+    metodi get e set?
+
+2. classe Libreria:
+    attributi: listaClienti vuota
+
+Il metodo aggiungiCliente aggiunge un nuovo cliente senza creare duplicati: 
+per verificare se esiste un duplicato, devo verificare che il codice univoco non sia già presente nei miei clienti
+
+Il metodo rimuoviCliente rimuove un cliente: 1-per rimuovere un cliente la lista deve essere popolata, se pari a 0, messaggio di errore
+2- ricerca per cliente per codice identificativo (come sopra)
+
+Il metodo spesaCliente aggiorna la spesa del cliente per il quantitativo di euro e di centesimi di euro indicato: chiedere in input 
+all'utente spesa in euro e in centesimi
+
+Il metodo premio restituisce la lista dei clienti che hanno accumulato una spesa pari o superiore alla soglia: iterare all'interno della lista
+e cercare per parametro Spesa. Se la spesa è superiore a 100, la spesa verrà portata a 0
+Se la lista è vuota il metodo non può essere chiamato
+
+Il metodo rimuoviListaClienti rimuove dall’archivio tutti i clienti presenti nella lista specificata come parametro esplicito:
+chiedere all'utente la lista da cancellare--> clear()
+
+Il metodo statistica calcola e restituisce la spesa media per cliente:
+per ogni cliente presente nella lista prendo la spesa, la sommo in una variabile e poi la divido per la lunghezza della lista len()
+Il metodo non può essere invocato se la lista è vuota
+
+

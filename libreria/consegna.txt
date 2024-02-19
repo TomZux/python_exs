@@ -1,0 +1,31 @@
+Una negozio di libri desidera gestire un archivio elettronico per tenere traccia
+delle spese dei propri clienti. Si assuma una classe Cliente, avente le variabili d’istanza codice (stringa),
+spesaEuro (intero) e spesaCentesimi (intero). Assumere gli usuali metodi di accesso e modifica per
+tale classe senza svilupparne il codice. La classe Libreria è così definita:
+public class Libreria {
+private List clienti;
+ Libreria(){...};
+aggiungiCliente(String unCodice){...};
+rimuoviCliente(String unCodice){...};
+spesaCliente(String unCodice, int unaSpesaEuro,int unaSpesaCentesimi){...};
+premio(int unaSogliaEuro){...};
+rimuoviListaClienti(ArrayList<Cliente> lista){...};
+statistica(){...};
+};
+Il metodo aggiungiCliente aggiunge un nuovo cliente senza creare duplicati - CHECK
+
+Il metodo rimuoviCliente rimuove un cliente - CHECK
+
+Il metodo spesaCliente aggiorna la spesa del cliente per il quantitativo di euro e di centesimi di euro indicato; nel risultato ottenuto,
+ convertire i centesimi in euro quando questa quantità supera 99. - CHECK
+
+Il metodo premio restituisce la lista dei clienti che hanno accumulato una spesa pari o superiore alla soglia in euro indicata,
+ ed azzera la spesa di questi clienti. - CHECK
+
+Il metodo rimuoviListaClienti rimuove dall’archivio tutti i clienti presenti nella lista specificata come parametro esplicito. 
+
+Il metodo statistica calcola e restituisce la spesa media per cliente. - CHECK
+
+Consigli:
+Attenzione al metodo spesaCliente che traduce i centesimi in euro, per farlo è
+sufficiente dividere per 100 i centesimi.
