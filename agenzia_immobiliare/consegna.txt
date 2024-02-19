@@ -1,0 +1,27 @@
+Si ha la necessità di gestire un’agenzia immobiliare. In particolare,
+ogni casa in gestione all’agenzia immobiliare ha un suo codice univoco alfanumerico e
+diverse informazioni (circa 6) di cui il prezzo di vendita, numero vani, metri quadri,
+condominio(si/no),garage(si/no),ascensore(si/no).
+
+La tipica richiesta rivolta all’operatore
+dell’agenzia immobiliare è quella di trovare le case all’interno di un range di prezzo.
+
+1.definisce un oggetto casa con le informazioni ad essa relative - CHECK 
+2.inizializza le informazioni di cui al punto precedente - CHECK
+3.gestisce il dizionario delle case ed i codici identificativi delle stesse - CHECK
+
+4.salva su file binario tutte le case;- CHECK
+
+5.stampa a schermo il catalogo case gestite dall’agenzia immobiliare - CHECK
+
+6.richiede all’utente gli estremi del range di prezzo e stampa a schermo tutte le case che rientrano in tale range; CHECK
+
+7.gestisce le eccezioni che possono essere sollevate;
+
+8.richiama tutte le funzioni viste (main) - CHECK 
+
+N.B. Il metodo __str__ è responsabile di ritornare una rappresentazione in stringa dell’oggetto
+e il programmatore sceglie tale rappresentazione. E’ richiesto che il metodo __str__ crei e ritorni una stringa.
+
+Per saperne di piu : https://it.linux-console.net/?p=6881
+

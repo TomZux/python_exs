@@ -1,0 +1,20 @@
+classe Casa:
+    attributi/proprietà:
+    
+    1. codice univoco alfanumerico (random) - private/protected
+    2. prezzo vendita (float) - public
+    3. numero vani (int) - public
+    4. condo (bool) - public
+    5. garage (bool) - public
+    6. ascensore(bool) - public
+
+    Metodi: getter/setter + toString
+
+
+classe Agenzia:
+    attributi:
+    1. Dizionario di Case-> cod.univ(chiave), Oggetto(valore) - private/protected
+
+    Metodi: getter/setter + stampaDizionario 
+
+
